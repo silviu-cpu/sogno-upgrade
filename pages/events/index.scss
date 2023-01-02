@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.merienda{
+    font-family:'Merienda', cursive;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.center{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-black{
+    background-color: #000;
+}
+
+.background-green{
+    background-color: #000;
+    border-color: rgba(41, 231, 214, 1);
+}
+
+.hover-effect:hover{
+    color:rgba(41, 231, 214, 1);
+    transition: 0.5s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      overflow-y:scroll;
+      overflow-x:hidden;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .center {
+        height: calc(100vh - 152px);
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .center {
+        height: calc(100vh - 152px);
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .center {
+        height: calc(100vh - 152px);
+    }
+  }
