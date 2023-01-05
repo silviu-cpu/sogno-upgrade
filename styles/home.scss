@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.merienda{
+    font-family:'Merienda', cursive;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-gray{
+    background: #15181D;
+}
+
+.navbar-grayer{
+    background: #000;
+}
+
+.text-color{
+    color:#BABDC4;
+}
+
+
+.navbar-toggler span {
+    display:block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+}
+
+.navbar-toggler span + span {
+    margin-top: 4px;
+    width: 22px;
+    background: rgba(41, 231, 214, 1);
+    
+}
+
+.navbar-toggler span + span + span {
+    width: 22px;
+    background: white;
+}
+
+.position-center{
+    justify-content: center !important;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.text-color-gray{
+    color:#B7BDC4;
+}
+
+.text-color-white{
+    color:#fff;
+}
+
+.footer-gray{
+    background: #15181D;
+}
+
+
+.copyright{
+    text-decoration: none;
+}
+
+.underline-hover-effect{
+    display:inline-block;
+    position: relative;
+}
+
+.underline-hover-effect::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(41, 231, 214, 1);
+    background-image: linear-gradient(to right, rgba(41, 231, 214, 1), white);
+    transition: width 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::before{
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.merienda{
+    font-family:'Merienda', cursive;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: calc(100vh - 152px);
+    background:linear-gradient(
+        180deg
+        ,transparent 27%,rgba(41, 231, 214, 1)),radial-gradient(farthest-corner,transparent 0,rgba(41, 231, 214, 1) 100%),url('/background.webp') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-y: hidden;
+    background-blend-mode: multiply;
+}
+
+.text-color{
+    color:#d3d3d3;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.text-color-gray{
+    color:#B7BDC4;
+}
+
+.text-color-white{
+    color:#fff;
+}
+
+.center{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transition: 0.6s ease-in;
+}
+
+.navbar-brand:hover {
+    color: rgba(41, 231, 214, 1);
+    transition: 0.6s ease-in;
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .center {
+      justify-content: center;
+    }
+  }

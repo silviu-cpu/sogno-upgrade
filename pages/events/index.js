@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function Home() {
+export default function Events() {
     return (
         <div class="center background-black ">
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-3 row-cols-xxl-3 row-cols-row-cols-sm-3 g-4">

@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/events.scss'
 import '../styles/contact.scss'
+import '../styles/home.scss'
+
 
 import type { AppProps } from 'next/app'
 
