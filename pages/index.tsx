@@ -12,7 +12,6 @@ export default function Home() {
    
     <div>
       < Navbar />
-
       <div className="d-flex justify-content-start align-items-center background text-color ml-20">
         <div className="container">
             <div className="row">

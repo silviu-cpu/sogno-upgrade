@@ -7,7 +7,6 @@ export default function Contact() {
     return (
         <div>
             <Navbar />
-
             <div class="container-fluid background center">
                 <div class="card">
                     <div class="card-body text-center">
@@ -19,7 +18,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-
             <Footer />
         </div>
     )
