@@ -8,13 +8,6 @@
 .montserrat{
     font-family: 'Montserrat', sans-serif;
 }
-.center{
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .background-black{
     background-color: #000;
@@ -39,21 +32,7 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
-    .center {
-        height: calc(100vh - 152px);
-    }
-  }
-  @media screen and (min-width: 1600px) {
-    .center {
-        height: calc(100vh - 152px);
-    }
-  }
-  @media screen and (min-width: 1900px) {
-    .center {
-        height: calc(100vh - 152px);
-    }
-  }
+
 
   //styling carousel
   .itemP {
@@ -102,11 +81,14 @@ $primary: #fff;
 $secondary: rgba(41, 231, 214, 1);
 $white: #fff;
 $gray: #9b9b9b;
+
 .form__group {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
   width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .form__field {

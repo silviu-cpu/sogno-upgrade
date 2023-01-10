@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <div>
             <Navbar />
-            <div class="container-fluid background center">
+            <div class="container-fluid background center2">
                 <div class="card">
                     <div class="card-body text-center">
                         <h2 class="merienda text-color">Contact Us</h2>

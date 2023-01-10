@@ -24,9 +24,10 @@ export default function Events() {
                             <p>{item.descriere}</p>
                             <a href={item.link} target="_blank" className='btn btn-danger spatiu' rel="noreferrer"> View the event </a>
                             <h2> Subscribe below for our next events </h2>
+                            
                             <div className='form__group field'>
-                            <input type='email' placeholder='Enter your email' class="form__field"></input>
-                            <label className='form__label'> Email </label>
+                                <input type='email' placeholder='Enter your email' class="form__field"></input>
+                                <label className='form__label'> Email </label>
                             </div>
                             
                         </Carousel.Caption>
