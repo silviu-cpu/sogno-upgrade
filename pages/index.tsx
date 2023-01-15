@@ -19,6 +19,18 @@ export default function Home() {
                     <p className="text-color-gray montserrat">Welcome to</p> 
                     <h1 className="text-color merienda">Sogno</h1>   
                     <p className="text-color-white montserrat effect">Sogno was created to give you a remarkable experience in different unique locations all over the world, where dreams are born and time is never planned.</p>
+                    <h3 className="text-color merienda">Subscribe to our next events</h3>
+                    <form action="/send-data-here" method="post">
+                    <input
+                      type="text"
+                      id="roll"
+                      name="roll"
+                      required
+                      minlength="10"
+                      maxlength="20"
+                    />
+                    <button type="submit">Submit</button>
+                  </form>
                 </div>
                 <div className="col-sm-8 col-lg-6 col-xxl-7 center">
                     <Image className="logo" src="/logo.webp" alt="Logo" width={200} height={200} />
