@@ -4,10 +4,30 @@ import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import images from '../images/images'
-import { motion } from 'framer-motion'
+import {useState} from "react"
+import db from '../utils/firebase';
+import { FirebaseError } from 'firebase/app'
+import firebase from 'firebase/app'
+import "firebase/firestore";
+import { collection, addDoc } from 'firebase/firestore';
+import { serverTimestamp } from 'firebase/firestore'
 
 export default function Home() {
-  console.log(images);
+  const [input, setInput] = useState('');
+  const inputHandler = (e) => {
+    setInput(e.target.value);
+  }
+  const submitHandler =  (e) => {
+    e.preventDefault();
+    if(input) {
+      console.log(input);
+      //firebase add
+       addDoc(collection(db,"emails") , {
+        email:input,
+         time: serverTimestamp(),
+       });
+    }
+  }
   return (
    
     <div>
@@ -20,14 +40,10 @@ export default function Home() {
                     <h1 className="text-color merienda">Sogno</h1>   
                     <p className="text-color-white montserrat effect">Sogno was created to give you a remarkable experience in different unique locations all over the world, where dreams are born and time is never planned.</p>
                     <h3 className="text-color merienda">Subscribe to our next events</h3>
-                    <form action="/send-data-here" method="post">
+                    <form onSubmit={submitHandler}>
                     <input
-                      type="text"
-                      id="roll"
-                      name="roll"
-                      required
-                      minlength="10"
-                      maxlength="20"
+                      type="email"
+                      onChange={inputHandler}
                     />
                     <button type="submit">Submit</button>
                   </form>

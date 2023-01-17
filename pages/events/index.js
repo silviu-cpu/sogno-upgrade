@@ -23,8 +23,6 @@ export default function Events() {
                             <h3>{item.titlu}</h3>
                             <p>{item.descriere}</p>
                             <a href={item.link} target="_blank" className='btn btn-danger spatiu' rel="noreferrer"> View the event </a>
-                            
-                             
                         </Carousel.Caption>
                     </Carousel.Item> 
                 ))}
