@@ -20,7 +20,7 @@ export default function Home() {
   const submitHandler =  (e) => {
     e.preventDefault();
     if(input) {
-      console.log(input);
+      //console.log(input);
       //firebase add
        addDoc(collection(db,"emails") , {
         email:input,
@@ -45,7 +45,7 @@ export default function Home() {
                       type="email"
                       onChange={inputHandler}
                     />
-                    <button type="submit">Submit</button>
+                    <button type="submit">Submitk</button>
                   </form>
                 </div>
                 <div className="col-sm-8 col-lg-6 col-xxl-7 center">
