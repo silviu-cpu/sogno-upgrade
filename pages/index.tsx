@@ -11,6 +11,7 @@ import firebase from 'firebase/app'
 import "firebase/firestore";
 import { collection, addDoc } from 'firebase/firestore';
 import { serverTimestamp } from 'firebase/firestore'
+import { setMaxListeners } from 'events'
 
 export default function Home() {
   const [input, setInput] = useState('');
@@ -20,12 +21,13 @@ export default function Home() {
   const submitHandler =  (e) => {
     e.preventDefault();
     if(input) {
-      console.log(input);
+      
       //firebase add
        addDoc(collection(db,"emails") , {
         email:input,
-         time: serverTimestamp(),
+        time: serverTimestamp(),
        });
+       setInput('');
     }
   }
   return (
@@ -40,13 +42,21 @@ export default function Home() {
                     <h1 className="text-color merienda">Sogno</h1>   
                     <p className="text-color-white montserrat effect">Sogno was created to give you a remarkable experience in different unique locations all over the world, where dreams are born and time is never planned.</p>
                     <h3 className="text-color merienda">Subscribe to our next events</h3>
-                    <form onSubmit={submitHandler}>
-                    <input
-                      type="email"
-                      onChange={inputHandler}
-                    />
-                    <button type="submit">Submit</button>
-                  </form>
+                    <div className='form__group field'>
+                    <form onSubmit={submitHandler} >
+                      <input
+                        type="email"
+                        placeholder='Email'
+                        onChange={inputHandler}
+                        className="form__field"
+                        value={input}
+                      />
+                      <label className="form__label">Email</label>
+                      <div className="input-group-append">
+                      <button type="submit" className='btn btn-success'>Submit</button>
+                      </div>
+                    </form>
+                    </div>
                 </div>
                 <div className="col-sm-8 col-lg-6 col-xxl-7 center">
                     <Image className="logo" src="/logo.webp" alt="Logo" width={200} height={200} />

@@ -11,6 +11,7 @@ export default function Events() {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     }
+    console.log(images)
 
     return (
         <div>
