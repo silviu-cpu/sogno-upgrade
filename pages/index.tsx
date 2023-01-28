@@ -12,6 +12,8 @@ import "firebase/firestore";
 import { collection, addDoc } from 'firebase/firestore';
 import { serverTimestamp } from 'firebase/firestore'
 import { setMaxListeners } from 'events'
+import JSConfetti from 'js-confetti'
+
 
 export default function Home() {
   const [input, setInput] = useState("");
@@ -21,7 +23,8 @@ export default function Home() {
   const submitHandler = (e) => {
     e.preventDefault();
     if(input) {
-      
+      const jsConfetti = new JSConfetti();
+      jsConfetti.addConfetti();
       //firebase add
        addDoc(collection(db,"emails") , {
         email:input,

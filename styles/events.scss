@@ -158,10 +158,12 @@
 .btn-success {
   background-color:  $secondary !important;
   color: #000;
+  font-weight: bold;
 
   &:hover {
     color: #fff;
     transition: 0.4 ease-in;
+    font-weight: bold;
   }
 }
 
