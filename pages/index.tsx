@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import images from "../images/images";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import db from "../utils/firebase";
 import { FirebaseError } from "firebase/app";
 import firebase from "firebase/app";
@@ -17,10 +17,10 @@ import JSConfetti from 'js-confetti'
 
 export default function Home() {
   const [input, setInput] = useState("");
-  const inputHandler = (e) => {
+  const inputHandler = (e: { target: { value: SetStateAction<string>; }; }) => {
     setInput(e.target.value);
   };
-  const submitHandler = (e) => {
+  const submitHandler = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if(input) {
       const jsConfetti = new JSConfetti();
