@@ -63,7 +63,7 @@ export default function Home() {
                 <div/>
 
                 <div className="col-sm-8 col-lg-6 col-xxl-7 center">
-                    <Image className="logo" src="/logo.webp" alt="Logo" width={200} height={200} />
+                  <img className="logo" src="/logo.webp" alt='Logo'   width={200} height={200} />
                 </div> 
 
               </div>
