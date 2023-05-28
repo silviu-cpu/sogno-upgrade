@@ -35,6 +35,10 @@ export default function Home() {
   };
   return (
     <div>
+      <Head>
+        <title>Sogno | Techno Lovers</title>
+        <meta property="og:title" content="Sogno | Techno Lovers" key="title" />
+      </Head>
       <Navbar />
       <div className="d-flex justify-content-start align-items-center background text-color ml-20">
         <div className="container">

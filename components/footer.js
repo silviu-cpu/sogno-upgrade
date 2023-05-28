@@ -8,7 +8,7 @@ export default function Footer() {
             <footer className="text-center text-lg-start navbar-grayer">
                 <div className="text-center p-3  text-color montserrat">
                     <span className='pr'>Made with</span> <FontAwesomeIcon icon={faHeart} />   
-                    <Link className="text-dark text-color copyright merienda footer pl" href="/">by Sogno</Link>
+                    <Link className="copyright merienda footer pl" href="/">by Sogno</Link>
                 </div>
             </footer>
         </div>

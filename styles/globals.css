@@ -13,12 +13,16 @@ a {
   color: #BABDC4;
 }
 
-Link {
-  color: #BABDC4;
+a:focus {
+  color: #BABDC4 !important;
 }
 
 * {
   box-sizing: border-box;
+}
+
+input {
+  margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
