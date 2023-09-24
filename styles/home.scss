@@ -102,9 +102,7 @@
 .background{
     width: 100%;
     height: calc(100vh - 165px);
-    background:linear-gradient(
-        180deg
-        ,transparent 27%,rgba(41, 231, 214, 1)),radial-gradient(farthest-corner,transparent 0,rgba(41, 231, 214, 1) 100%),url('/background.webp') no-repeat;
+    background: url('/background.webp') no-repeat;
     background-size: cover;
     background-position: center center;
     overflow-y: hidden;
