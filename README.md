@@ -1,2 +1,2 @@
 # sogno-upgrade
-A static web app for a musical business
+A web app for a musical brand with subscription feature
